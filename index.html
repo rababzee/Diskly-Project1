@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body class="home-body">
+
+    <nav class="navbar navbar-expand-md custom-nav-bg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/Diskly3.png" alt="Diskly logo" class="diskly">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-compact-disc collapse-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="products.html">ALL</a></li>
+                            <li><a class="dropdown-item" href="products.html?brand=Sony">Sony</a></li> 
+                            <li><a class="dropdown-item" href="products.html?brand=Verbatim">Verbatim</a></li>
+                            <li><a class="dropdown-item" href="products.html?brand=TDK">TDK</a></li> 
+                            <li><a class="dropdown-item" href="products.html?brand=Philips">Philips</a></li> 
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <a class="dropdown-item" href="products.html?badge=New">New Release</a>
+                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-container">
+
+        <video class="hero-video" src="./images/hero1.mp4" autoplay muted loop playsinline></video>
+
+        <div class="hero-content">
+            <h1>Welcome to Diskly</h1>
+            <p>From Floppies to the Cloud — Trusted Storage Solutions.</p>
+            <p>Ready to store your data securely? Get in touch today!”</p>
+            <a href="./contactus.html" class="cta-btn">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="menu-container">
+
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/sony.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">Sony</h5>
+                <p class="card-text text-dark">Premium storage media designed for reliability and high performance —
+                    trusted by professionals worldwide.</p>
+                <a href="products.html?brand=Sony" class="cta-btn">Explore Products</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/tdk.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">TDK</h5>
+                <p class="card-text text-dark">Innovative optical and magnetic storage solutions combining cutting-edge
+                    technology with decades of experience.</p>
+                <a href="products.html?brand=TDK" class="cta-btn">Explore Products</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/philips.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">Philips</h5>
+                <p class="card-text text-dark">Affordable, high-quality media to safely archive your data and memories
+                    with ease. Lorem ipsum dolor sit amet.</p>
+                <a href="products.html?brand=Philips" class="cta-btn">Explore Products</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/verbatim.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">Verbatim</h5>
+                <p class="card-text text-dark">Leading brand in data storage with exceptional durability and performance
+                    you can depend on.</p>
+                <a href="products.html?brand=Verbatim" class="cta-btn">Explore Products</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/1.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">All Products</h5>
+                <p class="card-text text-dark">All Our Products Lorem ip Lorem, ipsum dolor. sum dolor sit amet
+                    consectetur Lorem ipsum Lorem ipsum Lorem. Lorem ipsum dolor</p>
+                <a href="products.html" class="cta-btn">Explore Products</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem; height: 35rem;">
+            <img class="card-img-top" src="./images/2.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Orbitron';">Coming Soon!</h5>
+                <p class="card-text text-dark">New Premium Edition
+                    Lorem ipsum dolor dolor sit Lorem ipsum dolor sit. consectetur, adipisicing elit. Error excepturi Lorem, ipsum. deleniti
+                    <rem class="lorem2"></rem> Est illo quo saepe debitis, ad qui magnam?
+                </p>
+                <a href="#" class="cta-btn disabled">Coming soon!</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+  <footer class="text-center text-white footer py-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5 style="font-family: 'Orbitron';">Diskly</h5>
+          <p style="font-family: 'Montserrat';">Providing reliable storage solutions from floppies to the cloud. Trust
+            us with your data.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 style="font-family: 'Orbitron';">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-white" href="./index.html">Home</a></li>
+            <li><a class="text-decoration-none text-white" href="./products.html">Products</a></li>
+            <li><a class="text-decoration-none text-white" href="./contactus.html">Contact</a></li>
+            <li><a class="text-decoration-none text-white" href="./About.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <a href="#"><i class="fab fa-facebook fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-lg text-white"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Diskly. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

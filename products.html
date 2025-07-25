@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+
+  <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm custom-nav-bg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/Diskly3.png" alt="Diskly logo" class="diskly">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-compact-disc collapse-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="partners.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="products.html">ALL</a></li>
+              <li><a class="dropdown-item" href="products.html?brand=Sony">Sony</a></li> 
+              <li><a class="dropdown-item" href="products.html?brand=Verbatim">Verbatim</a></li> 
+              <li><a class="dropdown-item" href="products.html?brand=TDK">TDK</a></li> 
+              <li><a class="dropdown-item" href="products.html?brand=Philips">Philips</a></li> 
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <a class="dropdown-item" href="products.html?badge=New">New Release</a>
+            </ul>
+
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<body class="products-body">
+  <div class="container my-4">
+    <!-- Search Row -->
+    <div class="row justify-content-center mb-3">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 d-flex">
+        <input type="text" id="searchBox" class="form-control me-2" placeholder="Search products">
+        <button class="btn btn-primary" onclick="filterProducts()">Search</button>
+      </div>
+    </div>
+
+    <!-- Filters Row -->
+    <div class="row justify-content-center mb-3">
+      <div class="col-6 col-sm-4 col-md-3 mb-2">
+        <select id="categoryFilter" class="form-select" onchange="filterProducts()">
+          <option value="">All Categories</option>
+          <option value="Sony">Sony</option>
+          <option value="Verbatim">Verbatim</option>
+          <option value="TDK">TDK</option>
+          <option value="Philips">Philips</option>
+        </select>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-2">
+        <select id="sortFilter" class="form-select" onchange="filterProducts()">
+          <option value="">Sort By</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="productGrid">
+    <div id="product-container" class="d-flex flex-wrap justify-content-center"></div>
+
+  </div>
+
+  <nav>
+    <ul class="pagination mt-4" id="pagination"></ul>
+  </nav>
+  </div>
+
+
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+  <footer class="text-center text-white footer py-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5 style="font-family: 'Orbitron';">Diskly</h5>
+          <p style="font-family: 'Montserrat';">Providing reliable storage solutions from floppies to the cloud. Trust
+            us with your data.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 style="font-family: 'Orbitron';">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-white" href="./index.html">Home</a></li>
+            <li><a class="text-decoration-none text-white" href="./products.html">Products</a></li>
+            <li><a class="text-decoration-none text-white" href="./contactus.html">Contact</a></li>
+            <li><a class="text-decoration-none text-white" href="./About.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <a href="#"><i class="fab fa-facebook fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg me-3 text-white"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-lg text-white"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Diskly. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
